@@ -2,8 +2,8 @@
   display: flex;
   gap: $calendar-gap;
   flex-wrap: wrap;
-  padding: $calendar-padding-total;
-  width: ($day-box-size * 7) + ($calendar-gap * 6);
+  padding: 0 $calendar-padding-side;
+  width: ($day-box-size * $calendar-columns) + ($calendar-gap * ($calendar-columns - 1));
 
   $day-names: (
     1: 'mon',
